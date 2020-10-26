@@ -36,11 +36,11 @@ $profile = $profile.ToLower()
 If ($profile.Length -eq 0 -or $profile -eq 1 -or $profile -eq "a" -or $profile -eq "all"){
     $profile = "Any"
 } elseif ($profile -eq 2 -or $profile -eq "d" -or $profile -eq "domain"){
-
+    $profile = "Domain"
 } elseif ($profile -eq 3 -or $profile -eq "p" -or $profile -eq "private"){
-
+    $profile = "Private"
 } elseif ($profile -eq 4 -or $profile -eq "u" -or $profile -eq "public"){
-
+    $profile = "Public"
 } else {
     Write-Host "Your input was misunderstood, setting profile to 'Any'"
     $profile = "Any"
